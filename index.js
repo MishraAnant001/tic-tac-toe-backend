@@ -23,6 +23,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.use(routes_1.mainRouter);
+app.get("/",(req,res)=>{
+    res.send("Welcome to backend")})
 app.use(middlewares_1.errorHandler);
 (() => __awaiter(void 0, void 0, void 0, function* () {
     try {
